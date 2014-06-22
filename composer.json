@@ -1,0 +1,19 @@
+{
+    
+    "require": {
+       
+         "symfony/class-loader": "2.1.*"
+      
+
+    },
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "composer",
+            "url": "http://composer.uci.cu:8080"
+        }
+    ]
+
+}
