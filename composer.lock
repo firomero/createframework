@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7faa0e086437e43468513fe5cdce1af8",
+    "hash": "08db4e406b5c9bde58f5e1992f7e078f",
     "packages": [
         {
             "name": "symfony/class-loader",
@@ -57,6 +57,51 @@
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
             "time": "2013-11-25 08:44:14"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v2.1.13",
+            "target-dir": "Symfony/Component/HttpFoundation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpFoundation.git",
+                "reference": "79fd1ab0b85e782d342e83799b39b729fd1a30ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://composer.prod.uci.cu:8080/dist/symfony-http-foundation-79fd1ab0b85e782d342e83799b39b729fd1a30ee-zip-aefb64.zip",
+                "reference": "79fd1ab0b85e782d342e83799b39b729fd1a30ee",
+                "shasum": "ec4f0537230959a6430039bc637c8fb744ebed1c"
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpFoundation": "",
+                    "SessionHandlerInterface": "Symfony/Component/HttpFoundation/Resources/stubs"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-08-07 13:58:42"
         }
     ],
     "packages-dev": [
