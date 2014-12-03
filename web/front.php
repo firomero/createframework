@@ -24,24 +24,8 @@ $context = new Routing\RequestContext();
 $context->fromRequest($request);
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);
 $resolver = new HttpKernel\Controller\ControllerResolver();
-
-try 
-{
-    $request->attributes->add($matcher->match($request->getPathInfo()));   
-    $controller = $resolver->getController($request);    
-    $arguments = $resolver->getArguments($request, $controller);
-    $response = call_user_func_array($controller, $arguments);
-} 
-catch (Routing\Exception\ResourceNotFoundException $e) 
-{
-    $response = new Response('No Encontrado', 404);
-} catch (Exception $e) 
-{
-	
-    $response = new Response('Ha ocurrido un error: '.$e->getMessage(), 500);
-}
-
+ 
+$framework = new Simplex\Framework($matcher, $resolver);
+$response = $framework->handle($request);
  
 $response->send();
-
-?>
