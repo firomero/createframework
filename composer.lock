@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0315cc61f69ea0064741b9d7636d8d10",
+    "hash": "c331618fa704ac1a6d94f96cc7bdbf93",
     "packages": [
         {
             "name": "symfony/class-loader",
@@ -274,20 +274,10 @@
             "time": "2013-05-06 10:48:41"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "platform": [],
+    "platform-dev": []
 }

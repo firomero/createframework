@@ -5,7 +5,8 @@
          "symfony/class-loader": "2.2.*",
          "symfony/http-foundation": "2.1.*",
          "symfony/routing": "2.1.*",
-          "symfony/http-kernel": "2.1.*"
+          "symfony/http-kernel": "2.1.*",
+        "symfony/event-dispatcher": "2.1.*"
       
 
     },
@@ -18,7 +19,7 @@
         },
         {
             "type": "composer",
-            "url": "http://composer.uci.cu:8080"
+            "url": "http://composer.prod.uci.cu:8080"
         }
     ]
 
