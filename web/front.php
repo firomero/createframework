@@ -38,8 +38,9 @@ $dispatcher->addListener('response', function (Simplex\ResponseEvent $event) {
         $headers->set('Content-Length', strlen($response->getContent()));
     }
 }, -255);
- 
-$framework = new Simplex\Framework($dispatcher,$matcher, $resolver);
+
+$framework = new Simplex\Framework($dispatcher, $matcher, $resolver);
+$framework = new HttpCache($framework, new Store(__DIR__.'/../cache'));
 $response = $framework->handle($request);
  
 $response->send();
