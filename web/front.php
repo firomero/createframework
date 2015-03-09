@@ -39,6 +39,16 @@ $dispatcher->addListener('response', function (Simplex\ResponseEvent $event) {
     }
 }, -255);
 
+$dispatcher->addSubscriber(new HttpKernel\EventListener\RouterListener($matcher));
+$errorHandler = (function (HttpKernel\Exception\FlattenException $exception) {
+    $msg = 'Something went wrong! ('.$exception->getMessage().')';
+
+    return new Response($msg, $exception->getStatusCode());
+});
+$dispatcher->addSubscriber(new HttpKernel\EventListener\ExceptionListener($errorHandler));
+$dispatcher->addSubscriber(new HttpKernel\EventListener\ResponseListener('UTF-8'));
+$dispatcher->addSubscriber(new Simplex\StringResponseListener());
+
 $framework = new Simplex\Framework($dispatcher, $matcher, $resolver);
 $framework = new HttpCache($framework, new Store(__DIR__.'/../cache'));
 $response = $framework->handle($request);
