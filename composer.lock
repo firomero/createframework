@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c331618fa704ac1a6d94f96cc7bdbf93",
+    "hash": "873e72f1857a6f3c0e1ddd468069a019",
     "packages": [
         {
             "name": "symfony/class-loader",
@@ -57,6 +57,58 @@
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
             "time": "2013-11-25 08:44:14"
+        },
+        {
+            "name": "symfony/dependency-injection",
+            "version": "v2.1.13",
+            "target-dir": "Symfony/Component/DependencyInjection",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/DependencyInjection.git",
+                "reference": "0df349077e11df224998c26806d50be128583faa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://composer.prod.uci.cu:8080/dist/symfony-dependency-injection-0df349077e11df224998c26806d50be128583faa-zip-49fa04.zip",
+                "reference": "0df349077e11df224998c26806d50be128583faa",
+                "shasum": "7d38cee2659d23a6df0366ef28ded1d7bcf32833"
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/config": "2.1.*",
+                "symfony/yaml": "2.1.*"
+            },
+            "suggest": {
+                "symfony/config": "2.1.*",
+                "symfony/yaml": "2.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\DependencyInjection": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DependencyInjection Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-05-03 05:08:13"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -274,10 +326,20 @@
             "time": "2013-05-06 10:48:41"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
-    "platform": [],
-    "platform-dev": []
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
